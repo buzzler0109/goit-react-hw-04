@@ -1,6 +1,6 @@
-import css from "./Button.module.scss";
+import css from "./LoadMoreBtn.module.scss";
 
-const Button = ({ onClick, children }) => {
+const LoadMoreBtn = ({ onClick, children }) => {
   return (
     <div className={css.BtnWrap}>
       <button className={css.button} onClick={onClick}>
@@ -10,4 +10,4 @@ const Button = ({ onClick, children }) => {
   );
 };
 
-export default Button;
+export default LoadMoreBtn;

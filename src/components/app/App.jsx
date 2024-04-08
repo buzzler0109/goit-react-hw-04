@@ -3,7 +3,7 @@ import Modal from "react-modal";
 
 import SearchBar from "../search_bar/SearchBar";
 import { getPhotos } from "../api/photos";
-import Button from "../button/Button";
+import LoadMoreBtn from "../load_more_btn/LoadMoreBtn";
 import { Loader } from "../loader1/Loader";
 import ImageGallery from "../image_gallery/ImageGallery";
 import ImageModal from "../modal/ImageModal";
@@ -83,7 +83,7 @@ const App = () => {
       )}
       {photos.length > 0 &&
         ((allPhotos && <p className={css.endList}>That is all we have!</p>) || (
-          <Button onClick={onLoadMore}>Load more...</Button>
+          <LoadMoreBtn onClick={onLoadMore}>Load more...</LoadMoreBtn>
         ))}
       <ImageModal
         closeModal={closeModal}
